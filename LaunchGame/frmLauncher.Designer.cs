@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLaunchConan = new System.Windows.Forms.Button();
             this.txtUrlToResolve = new System.Windows.Forms.TextBox();
             this.lblResolvedIp = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.chkSavePassword = new System.Windows.Forms.CheckBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.toolTips = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // btnLaunchConan
@@ -60,7 +63,7 @@
             this.lblResolvedIp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblResolvedIp.Location = new System.Drawing.Point(262, 66);
             this.lblResolvedIp.Name = "lblResolvedIp";
-            this.lblResolvedIp.Size = new System.Drawing.Size(140, 20);
+            this.lblResolvedIp.Size = new System.Drawing.Size(120, 20);
             this.lblResolvedIp.TabIndex = 2;
             this.lblResolvedIp.Text = "Not Found Yet";
             // 
@@ -113,11 +116,23 @@
             this.chkSavePassword.UseVisualStyleBackColor = true;
             this.chkSavePassword.CheckedChanged += new System.EventHandler(this.chkSavePassword_CheckedChanged);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Image = global::LaunchGame.Properties.Resources.refresh_small;
+            this.btnRefresh.Location = new System.Drawing.Point(386, 64);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(21, 23);
+            this.btnRefresh.TabIndex = 10;
+            this.toolTips.SetToolTip(this.btnRefresh, "Manually refresh the IP if you suspect it has changed.");
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click_1);
+            // 
             // frmLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 118);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.chkSavePassword);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtPassword);
@@ -144,6 +159,8 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.CheckBox chkSavePassword;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.ToolTip toolTips;
     }
 }
 

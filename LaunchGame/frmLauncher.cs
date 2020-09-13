@@ -25,9 +25,14 @@ namespace LaunchGame
             txtPassword.Text = GetPasswordFromFile();
             if (txtPassword.Text != "")
             {
-                chkSavePassword.Checked=true;
+                chkSavePassword.Checked = true;
             }
             txtUrlToResolve.Text = "deadmengaming.co.uk";
+            ResolveIp();
+        }
+
+        private void ResolveIp()
+        {
             IPAddress[] addresses = Dns.GetHostAddresses(txtUrlToResolve.Text);
             lblResolvedIp.Text = addresses[0].ToString();
         }
@@ -85,6 +90,11 @@ namespace LaunchGame
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             chkSavePassword.Checked = false;
+        }
+
+        private void btnRefresh_Click_1(object sender, EventArgs e)
+        {
+            ResolveIp();
         }
     }
 }
