@@ -39,6 +39,7 @@
             this.chkSavePassword = new System.Windows.Forms.CheckBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.toolTips = new System.Windows.Forms.ToolTip(this.components);
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLaunchConan
@@ -127,11 +128,20 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click_1);
             // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(23, 93);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblMessage.TabIndex = 11;
+            // 
             // frmLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 118);
+            this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.chkSavePassword);
             this.Controls.Add(this.lblPassword);
@@ -161,6 +171,7 @@
         private System.Windows.Forms.CheckBox chkSavePassword;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.ToolTip toolTips;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
 

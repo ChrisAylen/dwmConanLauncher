@@ -33,8 +33,20 @@ namespace LaunchGame
 
         private void ResolveIp()
         {
+            try
+            {
             IPAddress[] addresses = Dns.GetHostAddresses(txtUrlToResolve.Text);
             lblResolvedIp.Text = addresses[0].ToString();
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message== "No such host is known")
+                {
+                    lblMessage.Text = "That's probably a bad URL.";
+                }
+                else throw;
+            }
+
         }
 
         private void btnLaunchConan_Click(object sender, EventArgs e)
@@ -94,6 +106,7 @@ namespace LaunchGame
 
         private void btnRefresh_Click_1(object sender, EventArgs e)
         {
+            lblMessage.Text = "";
             ResolveIp();
         }
     }
