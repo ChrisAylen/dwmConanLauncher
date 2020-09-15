@@ -27,6 +27,8 @@ namespace LaunchGame
             {
                 chkSavePassword.Checked = true;
             }
+
+            //TODO: Take out of code and persist in a file
             txtUrlToResolve.Text = "deadmengaming.co.uk";
             ResolveIp();
         }
@@ -69,13 +71,10 @@ namespace LaunchGame
         }
         private void StorePassword(string password)
         {
-            //if (GetPasswordFromFile() == null)
-            //{
             System.IO.File.WriteAllText("config.txt", string.Empty);
             StreamWriter passwordWriter = new StreamWriter("config.txt");
             passwordWriter.WriteLine(password);
             passwordWriter.Close();
-            //}
         }
 
         private void chkSavePassword_CheckedChanged(object sender, EventArgs e)
@@ -108,6 +107,11 @@ namespace LaunchGame
         {
             lblMessage.Text = "";
             ResolveIp();
+        }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lblResolvedIp.Text + ":7777");
         }
     }
 }

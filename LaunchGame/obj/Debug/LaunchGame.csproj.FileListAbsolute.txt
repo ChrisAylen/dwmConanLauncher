@@ -17,3 +17,4 @@ C:\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csproj.Generate
 C:\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csproj.CoreCompileInputs.cache
 C:\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.exe
 C:\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.pdb
+C:\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csprojAssemblyReference.cache

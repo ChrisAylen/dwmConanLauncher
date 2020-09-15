@@ -63,6 +63,16 @@ namespace LaunchGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap copyIcon_small15x15 {
+            get {
+                object obj = ResourceManager.GetObject("copyIcon_small15x15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap refresh_small {
             get {
                 object obj = ResourceManager.GetObject("refresh_small", resourceCulture);

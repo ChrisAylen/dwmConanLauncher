@@ -40,6 +40,7 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.toolTips = new System.Windows.Forms.ToolTip(this.components);
             this.lblMessage = new System.Windows.Forms.Label();
+            this.btnCopy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLaunchConan
@@ -136,11 +137,23 @@
             this.lblMessage.Size = new System.Drawing.Size(0, 13);
             this.lblMessage.TabIndex = 11;
             // 
+            // btnCopy
+            // 
+            this.btnCopy.Image = global::LaunchGame.Properties.Resources.copyIcon_small15x15;
+            this.btnCopy.Location = new System.Drawing.Point(353, 87);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(27, 26);
+            this.btnCopy.TabIndex = 12;
+            this.toolTips.SetToolTip(this.btnCopy, "This will copy the resolved IP and append :7777 so it can be manually pasted.");
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
             // frmLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 118);
+            this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.chkSavePassword);
@@ -172,6 +185,7 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.ToolTip toolTips;
         private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Button btnCopy;
     }
 }
 
