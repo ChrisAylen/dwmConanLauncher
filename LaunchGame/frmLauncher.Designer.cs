@@ -37,15 +37,17 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.chkSavePassword = new System.Windows.Forms.CheckBox();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.toolTips = new System.Windows.Forms.ToolTip(this.components);
-            this.lblMessage = new System.Windows.Forms.Label();
             this.btnCopy = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.cmbMap = new System.Windows.Forms.ComboBox();
+            this.lblMap = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLaunchConan
             // 
-            this.btnLaunchConan.Location = new System.Drawing.Point(614, 66);
+            this.btnLaunchConan.Location = new System.Drawing.Point(746, 65);
             this.btnLaunchConan.Name = "btnLaunchConan";
             this.btnLaunchConan.Size = new System.Drawing.Size(75, 20);
             this.btnLaunchConan.TabIndex = 0;
@@ -91,7 +93,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(408, 66);
+            this.txtPassword.Location = new System.Drawing.Point(540, 65);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(200, 20);
             this.txtPassword.TabIndex = 5;
@@ -101,7 +103,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(405, 39);
+            this.lblPassword.Location = new System.Drawing.Point(537, 39);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(69, 17);
             this.lblPassword.TabIndex = 6;
@@ -117,6 +119,17 @@
             this.chkSavePassword.Text = "Save Password";
             this.chkSavePassword.UseVisualStyleBackColor = true;
             this.chkSavePassword.CheckedChanged += new System.EventHandler(this.chkSavePassword_CheckedChanged);
+            // 
+            // btnCopy
+            // 
+            this.btnCopy.Image = global::LaunchGame.Properties.Resources.copyIcon_small15x15;
+            this.btnCopy.Location = new System.Drawing.Point(353, 87);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(27, 26);
+            this.btnCopy.TabIndex = 12;
+            this.toolTips.SetToolTip(this.btnCopy, "This will copy the resolved IP and append :7777 so it can be manually pasted.");
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
             // btnRefresh
             // 
@@ -137,22 +150,31 @@
             this.lblMessage.Size = new System.Drawing.Size(0, 13);
             this.lblMessage.TabIndex = 11;
             // 
-            // btnCopy
+            // cmbMap
             // 
-            this.btnCopy.Image = global::LaunchGame.Properties.Resources.copyIcon_small15x15;
-            this.btnCopy.Location = new System.Drawing.Point(353, 87);
-            this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(27, 26);
-            this.btnCopy.TabIndex = 12;
-            this.toolTips.SetToolTip(this.btnCopy, "This will copy the resolved IP and append :7777 so it can be manually pasted.");
-            this.btnCopy.UseVisualStyleBackColor = true;
-            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            this.cmbMap.FormattingEnabled = true;
+            this.cmbMap.Location = new System.Drawing.Point(413, 65);
+            this.cmbMap.Name = "cmbMap";
+            this.cmbMap.Size = new System.Drawing.Size(121, 21);
+            this.cmbMap.TabIndex = 13;
+            // 
+            // lblMap
+            // 
+            this.lblMap.AutoSize = true;
+            this.lblMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMap.Location = new System.Drawing.Point(410, 39);
+            this.lblMap.Name = "lblMap";
+            this.lblMap.Size = new System.Drawing.Size(35, 17);
+            this.lblMap.TabIndex = 14;
+            this.lblMap.Text = "Map";
             // 
             // frmLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 118);
+            this.ClientSize = new System.Drawing.Size(1011, 118);
+            this.Controls.Add(this.lblMap);
+            this.Controls.Add(this.cmbMap);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnRefresh);
@@ -186,6 +208,8 @@
         private System.Windows.Forms.ToolTip toolTips;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.ComboBox cmbMap;
+        private System.Windows.Forms.Label lblMap;
     }
 }
 

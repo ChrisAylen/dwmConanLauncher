@@ -24,7 +24,10 @@ namespace LaunchGame
 
         private void frmLauncher_Load(object sender, EventArgs e)
         {
-
+            cmbMap.Items.Add("Siptah");
+            cmbMap.Items.Add("Exiled Lands");
+            //cmbMap.SelectedItem = 1;
+            cmbMap.SelectedIndex = 0;
             txtPassword.Text = GetPasswordFromFile();
             if (txtPassword.Text != "")
             {
@@ -56,7 +59,8 @@ namespace LaunchGame
 
         private void btnLaunchConan_Click(object sender, EventArgs e)
         {
-            var launchString = "steam://rungameid/440900// +connect " + lblResolvedIp.Text + ":7777 +password " + txtPassword.Text;
+            string port = SelectPort();
+            var launchString = "steam://rungameid/440900// +connect " + lblResolvedIp.Text + ":" + port + " +password " + txtPassword.Text.Trim();
             Process.Start(launchString);
         }
         private string GetPasswordFromFile()
@@ -111,7 +115,24 @@ namespace LaunchGame
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(lblResolvedIp.Text + ":7777");
+            string port = SelectPort();
+            Clipboard.SetText(lblResolvedIp.Text + ":" + port);
         }
+
+        private string SelectPort()
+        {
+            string port = "";
+            if (cmbMap.SelectedIndex == 0)
+            {
+                port = "7779";
+            }
+            else if (cmbMap.SelectedIndex == 1)
+            {
+                port = "7777";
+            }
+
+            return port;
+        }
+
     }
 }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 
 using System.Net;
+using System.Net.Http;
 
 namespace LaunchGame.Classes
 {
@@ -121,6 +122,7 @@ namespace LaunchGame.Classes
             }
             return configs;
         }
+
         //public Dictionary<string, string> GetEntireConfig(string file)
         //{
         //    using (var client = new WebClient())
