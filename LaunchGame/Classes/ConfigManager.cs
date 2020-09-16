@@ -116,9 +116,17 @@ namespace LaunchGame.Classes
             foreach (var row in contents)
             {
                 var delimiterValue = row.ToString().IndexOf(":");
-                var keyFound = row.Substring(0, delimiterValue);
-                var dataFound = row.Substring(delimiterValue + 1);
-                configs.Add(keyFound, dataFound);
+                if (delimiterValue != -1)
+                {
+                    var keyFound = row.Substring(0, delimiterValue);
+                    var dataFound = row.Substring(delimiterValue + 1);
+                    configs.Add(keyFound, dataFound);
+                }
+                else
+                {
+                    File.Delete("config.txt");
+                }
+
             }
             return configs;
         }
