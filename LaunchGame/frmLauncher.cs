@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LaunchGame.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ using System.Windows.Forms;
 
 namespace LaunchGame
 {
+    //Todo: implement version checking
     public partial class frmLauncher : Form
     {
         public frmLauncher()
@@ -22,6 +24,7 @@ namespace LaunchGame
 
         private void frmLauncher_Load(object sender, EventArgs e)
         {
+
             txtPassword.Text = GetPasswordFromFile();
             if (txtPassword.Text != "")
             {
@@ -58,23 +61,20 @@ namespace LaunchGame
         }
         private string GetPasswordFromFile()
         {
-            string password = "";
-            if (File.Exists("config.txt"))
-            {
-
-                StreamReader passwordReader = new StreamReader("config.txt");
-                password = passwordReader.ReadLine();
-                passwordReader.Close();
-
-            }
+            ConfigManager configManager = new ConfigManager();
+            string password=configManager.ReadKey("password");
             return password;
         }
         private void StorePassword(string password)
         {
-            System.IO.File.WriteAllText("config.txt", string.Empty);
-            StreamWriter passwordWriter = new StreamWriter("config.txt");
-            passwordWriter.WriteLine(password);
-            passwordWriter.Close();
+            ConfigManager configManager = new ConfigManager();
+            configManager.UpdateKey("password", password);
+            //Dictionary<string,string> configs = new Dictionary<string,string>(configManager.ListKeys());
+
+            //System.IO.File.WriteAllText("config.txt", string.Empty);
+            //StreamWriter passwordWriter = new StreamWriter("config.txt");
+            //passwordWriter.WriteLine(password);
+            //passwordWriter.Close();
         }
 
         private void chkSavePassword_CheckedChanged(object sender, EventArgs e)
