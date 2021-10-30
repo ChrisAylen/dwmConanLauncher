@@ -1,0 +1,10 @@
+﻿C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\frmLauncher.cs
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\frmLauncher.Designer.cs
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\Program.cs
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\Properties\AssemblyInfo.cs
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\frmLauncher.resx
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\Properties\Resources.resx
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\Properties\Settings.settings
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\App.config
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\Resources\refresh_small.png
+C:\Users\chris\source\repos\dwmConanLauncher\LaunchGame\Resources\copyIcon_small15x15.png
