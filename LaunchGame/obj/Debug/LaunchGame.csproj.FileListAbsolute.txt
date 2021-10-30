@@ -28,3 +28,13 @@ C:\Users\chris\Source\Repos\ChrisAylen\dwmConanLauncher\LaunchGame\obj\Debug\Lau
 C:\Users\chris\Source\Repos\ChrisAylen\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csproj.CoreCompileInputs.cache
 C:\Users\chris\Source\Repos\ChrisAylen\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.exe
 C:\Users\chris\Source\Repos\ChrisAylen\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.pdb
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\bin\Debug\LaunchGame.exe.config
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\bin\Debug\LaunchGame.exe
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\bin\Debug\LaunchGame.pdb
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csproj.AssemblyReference.cache
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.frmLauncher.resources
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.Properties.Resources.resources
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csproj.GenerateResource.cache
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.csproj.CoreCompileInputs.cache
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.exe
+C:\Users\chris\Source\Repos\dwmConanLauncher\LaunchGame\obj\Debug\LaunchGame.pdb

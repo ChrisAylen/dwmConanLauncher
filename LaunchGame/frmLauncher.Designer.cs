@@ -39,8 +39,8 @@
             this.chkSavePassword = new System.Windows.Forms.CheckBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.toolTips = new System.Windows.Forms.ToolTip(this.components);
-            this.lblMessage = new System.Windows.Forms.Label();
             this.btnCopy = new System.Windows.Forms.Button();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLaunchConan
@@ -129,14 +129,6 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click_1);
             // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(23, 93);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(0, 13);
-            this.lblMessage.TabIndex = 11;
-            // 
             // btnCopy
             // 
             this.btnCopy.Image = global::LaunchGame.Properties.Resources.copyIcon_small15x15;
@@ -147,6 +139,14 @@
             this.toolTips.SetToolTip(this.btnCopy, "This will copy the resolved IP and append :7777 so it can be manually pasted.");
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(23, 93);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblMessage.TabIndex = 11;
             // 
             // frmLauncher
             // 
@@ -165,7 +165,7 @@
             this.Controls.Add(this.txtUrlToResolve);
             this.Controls.Add(this.btnLaunchConan);
             this.Name = "frmLauncher";
-            this.Text = "Dead Men Gaming Launcher";
+            this.Text = "Dead Men Gaming Launcher V1.1";
             this.Load += new System.EventHandler(this.frmLauncher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
