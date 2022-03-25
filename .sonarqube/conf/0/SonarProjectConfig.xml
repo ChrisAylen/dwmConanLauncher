@@ -5,4 +5,5 @@
   <FilesToAnalyzePath>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\0\FilesToAnalyze.txt</FilesToAnalyzePath>
   <OutPath>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\out\0</OutPath>
   <ProjectType>Product</ProjectType>
+  <TargetFramework>net5.0-windows</TargetFramework>
 </SonarProjectConfig>

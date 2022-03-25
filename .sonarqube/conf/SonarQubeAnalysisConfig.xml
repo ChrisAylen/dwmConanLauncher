@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AnalysisConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <SonarConfigDir>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf</SonarConfigDir>
-  <SonarOutputDir>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\out</SonarOutputDir>
-  <SonarBinDir>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\bin</SonarBinDir>
-  <SonarScannerWorkingDirectory>C:\Users\chris\Source\Repos\dwmConanLauncher</SonarScannerWorkingDirectory>
+<AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <SonarConfigDir>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>C:\Users\chris\source\repos\dwmConanLauncher</SonarScannerWorkingDirectory>
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://10.0.0.17:9000</SonarQubeHostUrl>
   <SonarQubeVersion>9.1.0.47736</SonarQubeVersion>
@@ -12,7 +12,7 @@
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
     <ConfigSetting Id="VsCoverageConverterToolPath" />
-    <ConfigSetting Id="settings.file.path" Value="C:\sonar-scanner-msbuild-5.3.1.36242-net46\SonarQube.Analysis.xml" />
+    <ConfigSetting Id="settings.file.path" Value="C:\Users\chris\.dotnet\tools\.store\dotnet-sonarscanner\5.3.2\dotnet-sonarscanner\5.3.2\tools\net5.0\any\SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
     <Property Name="sonaranalyzer-cs.nuget.packageVersion">8.29.0.36737</Property>
@@ -109,8 +109,8 @@
   <AnalyzersSettings>
     <AnalyzerSettings>
       <Language>cs</Language>
-      <RulesetPath>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf\Sonar-cs.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf\Sonar-cs-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\Sonar-cs.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\Sonar-cs-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="8.29.0.36737" StaticResourceName="SonarAnalyzer-8.29.0.36737.zip">
           <AssemblyPaths>
@@ -132,13 +132,13 @@
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf\cs\SonarLint.xml</Path>
+        <Path>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\cs\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
     <AnalyzerSettings>
       <Language>vbnet</Language>
-      <RulesetPath>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf\Sonar-vbnet.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf\Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\Sonar-vbnet.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="8.29.0.36737" StaticResourceName="SonarAnalyzer-8.29.0.36737.zip">
           <AssemblyPaths>
@@ -160,7 +160,7 @@
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>C:\Users\chris\Source\Repos\dwmConanLauncher\.sonarqube\conf\vbnet\SonarLint.xml</Path>
+        <Path>C:\Users\chris\source\repos\dwmConanLauncher\.sonarqube\conf\vbnet\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
   </AnalyzersSettings>

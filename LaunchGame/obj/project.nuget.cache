@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SLyYLwuLHV+l3GQlqI07FGb18wfzTpJYZEJfHI1j3gtu7HxMeXmIwyvnbfkBpUQ9eFE0QbHO8BrJpq5GCsyrpA==",
+  "dgSpecHash": "Zw0lfZlOWJTlDKtQI5Xiu4uMpOQUWiMaDdql75NUUNV6IB/sRa/mDZM1QuwuJ2j3t9AoLnaVvzG4KhtI9+qfRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\source\\repos\\dwmConanLauncher\\LaunchGame\\LaunchGame.csproj",
   "expectedPackageFiles": [
@@ -65,7 +65,8 @@
     "C:\\Users\\chris\\.nuget\\packages\\system.speech\\5.0.0\\system.speech.5.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\system.threading.accesscontrol\\5.0.0\\system.threading.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\chris\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\chris\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

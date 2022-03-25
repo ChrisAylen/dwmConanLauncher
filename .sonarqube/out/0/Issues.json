@@ -5,10 +5,10 @@
     {
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
-        "version": "3.11.0.0",
-        "fileVersion": "3.11.0-4.21403.6 (ae1fff34)",
-        "semanticVersion": "3.11.0",
-        "language": "en-GB"
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.0-4.21458.2 (2bfff7b9)",
+        "semanticVersion": "4.0.0",
+        "language": "en-US"
       },
       "results": [
         {
@@ -31,9 +31,92 @@
           "properties": {
             "warningLevel": 1
           }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'StorePassword' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/chris/source/repos/dwmConanLauncher/LaunchGame/frmLauncher.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 22,
+                  "endLine": 65,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GetPasswordFromFile' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/chris/source/repos/dwmConanLauncher/LaunchGame/frmLauncher.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 24,
+                  "endLine": 52,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1824",
+          "level": "note",
+          "message": "Mark assemblies with NeutralResourcesLanguageAttribute",
+          "properties": {
+            "warningLevel": 1
+          }
         }
       ],
       "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1824": {
+          "id": "CA1824",
+          "shortDescription": "Mark assemblies with NeutralResourcesLanguageAttribute",
+          "fullDescription": "The NeutralResourcesLanguage attribute informs the ResourceManager of the language that was used to display the resources of a neutral culture for an assembly. This improves lookup performance for the first resource that you load and can reduce your working set.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1824",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode",
+              "CompilationEnd"
+            ]
+          }
+        },
         "S1135": {
           "id": "S1135",
           "shortDescription": "Track uses of \"TODO\" tags",
